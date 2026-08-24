@@ -34,10 +34,42 @@
       margin-bottom: 80px;
     }
 
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     .name {
       font-weight: 700;
       font-size: 18px;
       letter-spacing: 0.5px;
+    }
+
+    .language-toggle {
+      display: flex;
+      gap: 8px;
+      background: #f0f0f0;
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    .language-toggle button {
+      padding: 6px 12px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      color: #666666;
+    }
+
+    .language-toggle button.active {
+      background: #ffffff;
+      color: #222222;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     nav {
@@ -68,6 +100,13 @@
       margin-top: 70px;
       margin-bottom: 20px;
       font-weight: 700;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
     p {
@@ -170,6 +209,11 @@
         margin-bottom: 50px;
       }
 
+      .header-left {
+        flex-direction: column;
+        gap: 12px;
+      }
+
       nav {
         flex-wrap: wrap;
         gap: 16px;
@@ -186,6 +230,10 @@
       h2 {
         margin-top: 50px;
       }
+
+      .language-toggle {
+        align-self: flex-start;
+      }
     }
   </style>
 </head>
@@ -195,37 +243,43 @@
   <div class="container">
 
     <header>
-      <div class="name">Martin Ochoa</div>
+      <div class="header-left">
+        <div class="name">Martin Ochoa</div>
+        <div class="language-toggle">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+      </div>
 
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="nav-about">About</a>
+        <a href="#projects" class="nav-projects">Projects</a>
+        <a href="#contact" class="nav-contact">Contact</a>
       </nav>
     </header>
 
     <main>
 
       <section>
-        <h1>Hi, I'm Martin.</h1>
+        <h1 class="greeting">Hi, I'm Martin.</h1>
 
-        <p class="intro-text">
+        <p class="intro-text intro-description">
           I'm a developer passionate about building clean, efficient code and creating meaningful digital experiences. I love solving problems and learning new technologies.
         </p>
       </section>
 
       <section id="about">
-        <h2>About</h2>
+        <h2 class="nav-about">About</h2>
 
-        <p>
+        <p class="about-para-1">
           I'm based in [Your Location] and have been coding for [X years]. I specialize in [your specialties: web development, full-stack, frontend, backend, etc.].
         </p>
 
-        <p>
+        <p class="about-para-2">
           When I'm not coding, you'll find me [your hobbies/interests]. I'm always interested in collaborating on interesting projects and learning from the community.
         </p>
 
-        <h3 style="font-size: 18px; margin-top: 24px; margin-bottom: 12px;">Skills</h3>
+        <h3 class="skills-title">Skills</h3>
         <div class="skills">
           <div class="skill-tag">JavaScript</div>
           <div class="skill-tag">React</div>
@@ -237,50 +291,50 @@
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="nav-projects">Projects</h2>
 
         <div class="project">
           <div class="project-title">
-            <a href="#" target="_blank">Project Name 1</a>
+            <a href="#" target="_blank" class="project-1-title">Project Name 1</a>
           </div>
-          <p class="project-description">
+          <p class="project-description project-1-desc">
             A brief description of what this project does and the problem it solves. Highlight the key features and technologies used.
           </p>
           <div class="project-tags">
-            <strong>Tech:</strong> JavaScript, React, Firebase
+            <strong class="tech-label">Tech:</strong> JavaScript, React, Firebase
           </div>
         </div>
 
         <div class="project">
           <div class="project-title">
-            <a href="#" target="_blank">Project Name 2</a>
+            <a href="#" target="_blank" class="project-2-title">Project Name 2</a>
           </div>
-          <p class="project-description">
+          <p class="project-description project-2-desc">
             Another description of an impressive project you've built. Make sure to highlight what makes it special and what you learned.
           </p>
           <div class="project-tags">
-            <strong>Tech:</strong> Python, Flask, PostgreSQL
+            <strong class="tech-label">Tech:</strong> Python, Flask, PostgreSQL
           </div>
         </div>
 
         <div class="project">
           <div class="project-title">
-            <a href="#" target="_blank">Project Name 3</a>
+            <a href="#" target="_blank" class="project-3-title">Project Name 3</a>
           </div>
-          <p class="project-description">
+          <p class="project-description project-3-desc">
             A third project that showcases your skills and creativity. You can link to GitHub, live demos, or case studies.
           </p>
           <div class="project-tags">
-            <strong>Tech:</strong> HTML, CSS, JavaScript
+            <strong class="tech-label">Tech:</strong> HTML, CSS, JavaScript
           </div>
         </div>
 
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <h2 class="nav-contact">Contact</h2>
 
-        <p>
+        <p class="contact-description">
           I'd love to hear from you! Feel free to reach out via email or connect with me on social media.
         </p>
 
@@ -290,16 +344,16 @@
             <a href="tel:+573102807257">+57 310 280 7257</a>
           </div>
           <div class="contact-link">
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="mailto:your.email@example.com" class="email-label">Email</a>
           </div>
           <div class="contact-link">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://github.com/yourusername" target="_blank" class="github-label">GitHub</a>
           </div>
           <div class="contact-link">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="linkedin-label">LinkedIn</a>
           </div>
           <div class="contact-link">
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="twitter-label">Twitter</a>
           </div>
         </div>
       </section>
@@ -307,10 +361,131 @@
     </main>
 
     <footer>
-      <p>© 2026 Martin Ochoa. All rights reserved.</p>
+      <p class="footer-text">© 2026 Martin Ochoa. All rights reserved.</p>
     </footer>
 
   </div>
+
+  <script>
+    // Translation dictionary
+    const translations = {
+      en: {
+        greeting: "Hi, I'm Martin.",
+        intro_description: "I'm a developer passionate about building clean, efficient code and creating meaningful digital experiences. I love solving problems and learning new technologies.",
+        nav_about: "About",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        about_para_1: "I'm based in [Your Location] and have been coding for [X years]. I specialize in [your specialties: web development, full-stack, frontend, backend, etc.].",
+        about_para_2: "When I'm not coding, you'll find me [your hobbies/interests]. I'm always interested in collaborating on interesting projects and learning from the community.",
+        skills_title: "Skills",
+        project_1_title: "Project Name 1",
+        project_1_desc: "A brief description of what this project does and the problem it solves. Highlight the key features and technologies used.",
+        project_2_title: "Project Name 2",
+        project_2_desc: "Another description of an impressive project you've built. Make sure to highlight what makes it special and what you learned.",
+        project_3_title: "Project Name 3",
+        project_3_desc: "A third project that showcases your skills and creativity. You can link to GitHub, live demos, or case studies.",
+        tech_label: "Tech:",
+        contact_description: "I'd love to hear from you! Feel free to reach out via email or connect with me on social media.",
+        email_label: "Email",
+        github_label: "GitHub",
+        linkedin_label: "LinkedIn",
+        twitter_label: "Twitter",
+        footer_text: "© 2026 Martin Ochoa. All rights reserved."
+      },
+      es: {
+        greeting: "Hola, soy Martin.",
+        intro_description: "Soy un desarrollador apasionado por crear código limpio y eficiente, y por crear experiencias digitales significativas. Me encanta resolver problemas y aprender nuevas tecnologías.",
+        nav_about: "Acerca de",
+        nav_projects: "Proyectos",
+        nav_contact: "Contacto",
+        about_para_1: "Estoy basado en [Tu Ubicación] y he estado programando durante [X años]. Me especializo en [tus especialidades: desarrollo web, full-stack, frontend, backend, etc.].",
+        about_para_2: "Cuando no estoy programando, me encontrarás [tus pasatiempos/intereses]. Siempre estoy interesado en colaborar en proyectos interesantes y aprender de la comunidad.",
+        skills_title: "Habilidades",
+        project_1_title: "Nombre del Proyecto 1",
+        project_1_desc: "Una breve descripción de lo que hace este proyecto y el problema que resuelve. Destaca las características clave y las tecnologías utilizadas.",
+        project_2_title: "Nombre del Proyecto 2",
+        project_2_desc: "Otra descripción de un proyecto impresionante que has construido. Asegúrate de destacar qué lo hace especial y qué aprendiste.",
+        project_3_title: "Nombre del Proyecto 3",
+        project_3_desc: "Un tercer proyecto que muestre tus habilidades y creatividad. Puedes vincular a repositorios de GitHub, demostraciones en vivo o estudios de casos.",
+        tech_label: "Tecnología:",
+        contact_description: "¡Me encantaría saber de ti! No dudes en comunicarte por correo electrónico o conectar conmigo en redes sociales.",
+        email_label: "Correo",
+        github_label: "GitHub",
+        linkedin_label: "LinkedIn",
+        twitter_label: "Twitter",
+        footer_text: "© 2026 Martin Ochoa. Todos los derechos reservados."
+      }
+    };
+
+    // Initialize language
+    let currentLanguage = 'en';
+
+    // Get all language buttons
+    const langButtons = document.querySelectorAll('.lang-btn');
+
+    // Add click event to language buttons
+    langButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        currentLanguage = button.getAttribute('data-lang');
+        updateLanguage(currentLanguage);
+        
+        // Update active button styling
+        langButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Save preference to localStorage
+        localStorage.setItem('preferredLanguage', currentLanguage);
+      });
+    });
+
+    // Function to update all text on the page
+    function updateLanguage(lang) {
+      const t = translations[lang];
+
+      // Update all elements with translation keys
+      document.querySelector('.greeting').textContent = t.greeting;
+      document.querySelector('.intro-description').textContent = t.intro_description;
+      
+      document.querySelectorAll('.nav-about').forEach(el => el.textContent = t.nav_about);
+      document.querySelectorAll('.nav-projects').forEach(el => el.textContent = t.nav_projects);
+      document.querySelectorAll('.nav-contact').forEach(el => el.textContent = t.nav_contact);
+      
+      document.querySelector('.about-para-1').textContent = t.about_para_1;
+      document.querySelector('.about-para-2').textContent = t.about_para_2;
+      document.querySelector('.skills-title').textContent = t.skills_title;
+      
+      document.querySelector('.project-1-title').textContent = t.project_1_title;
+      document.querySelector('.project-1-desc').textContent = t.project_1_desc;
+      document.querySelector('.project-2-title').textContent = t.project_2_title;
+      document.querySelector('.project-2-desc').textContent = t.project_2_desc;
+      document.querySelector('.project-3-title').textContent = t.project_3_title;
+      document.querySelector('.project-3-desc').textContent = t.project_3_desc;
+      
+      document.querySelector('.tech-label').textContent = t.tech_label;
+      document.querySelector('.contact-description').textContent = t.contact_description;
+      document.querySelector('.email-label').textContent = t.email_label;
+      document.querySelector('.github-label').textContent = t.github_label;
+      document.querySelector('.linkedin-label').textContent = t.linkedin_label;
+      document.querySelector('.twitter-label').textContent = t.twitter_label;
+      document.querySelector('.footer-text').textContent = t.footer_text;
+    }
+
+    // Load saved language preference on page load
+    window.addEventListener('load', () => {
+      const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+      currentLanguage = savedLanguage;
+      updateLanguage(currentLanguage);
+      
+      // Update button styling
+      langButtons.forEach(btn => {
+        if (btn.getAttribute('data-lang') === currentLanguage) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
