@@ -18,8 +18,69 @@
   <a class="name" href="index.html">
     Martin Ochoa
   </a>
+<!-- Insert this immediately after the "Martin Ochoa" title element -->
+<!-- Bilingual tab start -->
+<div id="bilingual-tabs" class="tabs" aria-live="polite">
+  <div role="tablist" aria-label="Language selection" class="tablist">
+    <button role="tab" id="tab-en" class="tab" aria-selected="true" aria-controls="panel-en" data-lang="en">English</button>
+    <button role="tab" id="tab-es" class="tab" aria-selected="false" aria-controls="panel-es" data-lang="es">Español</button>
+  </div>
 
-  <nav>
+  <section id="panel-en" role="tabpanel" aria-labelledby="tab-en" class="tabpanel" data-lang="en">
+    <!-- Replace with your English content or keep if already on page -->
+    <p>This page is in English.</p>
+  </section>
+
+  <section id="panel-es" role="tabpanel" aria-labelledby="tab-es" class="tabpanel hidden" data-lang="es" hidden>
+    <!-- Replace this with the Spanish translation -->
+    <p>Esta página está en español.</p>
+  </section>
+</div>
+
+<style id="bilingual-tab-styles">
+  .tabs { margin-top: 12px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+  .tablist { display:flex; gap:8px; margin-bottom:10px; }
+  .tab { padding:6px 12px; border:1px solid #ccc; background:#f6f6f8; cursor:pointer; border-radius:6px; }
+  .tab[aria-selected="true"] { background:white; box-shadow:0 2px 6px rgba(0,0,0,0.06); font-weight:600; }
+  .tabpanel { border:1px solid #ccc; padding:14px; border-radius:6px; background:white; }
+  .hidden { display:none; }
+</style>
+
+<script>
+(function () {
+  if (document.getElementById('bilingual-tab-styles') && document.getElementById('bilingual-tabs')) {
+    // already added
+    return;
+  }
+  const tablist = document.querySelector('#bilingual-tabs [role="tablist"]');
+  if (!tablist) return;
+  const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+  const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
+  function activateTab(tab) {
+    tabs.forEach(t => {
+      const selected = t === tab;
+      t.setAttribute('aria-selected', selected ? 'true' : 'false');
+      t.tabIndex = selected ? 0 : -1;
+    });
+    panels.forEach(p => {
+      const show = p.getAttribute('data-lang') === tab.getAttribute('data-lang');
+      if (show) { p.classList.remove('hidden'); p.hidden = false; } else { p.classList.add('hidden'); p.hidden = true; }
+    });
+    tab.focus();
+  }
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => activateTab(tab));
+    tab.addEventListener('keydown', (e) => {
+      const idx = tabs.indexOf(tab);
+      if (e.key === 'ArrowRight') { activateTab(tabs[(idx + 1) % tabs.length]); e.preventDefault(); }
+      else if (e.key === 'ArrowLeft') { activateTab(tabs[(idx - 1 + tabs.length) % tabs.length]); e.preventDefault(); }
+      else if (e.key === 'Home') { activateTab(tabs[0]); e.preventDefault(); }
+      else if (e.key === 'End') { activateTab(tabs[tabs.length - 1]); e.preventDefault(); }
+    });
+  });
+})();
+</script>
+<!-- Bilingual tab end -->  <nav>
     <a href="about.html">About</a>
     <a href="writing.html">Workshops</a>
     <a href="reading.html">Tools for Entrepreneurs</a>
