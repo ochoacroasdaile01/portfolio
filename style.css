@@ -68,7 +68,7 @@ footer {
     flex-wrap: wrap;
   }
 }
-.profile-picture {
+.WebsitePICture.jpg {
   width: 220px;
   height: 220px;
   object-fit: cover;
