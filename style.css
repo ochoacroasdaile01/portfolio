@@ -215,24 +215,24 @@ footer {
   }
 
 }
+
+/* PHOTO GALLERY */
+
 .photo-gallery img {
   width: 205px;
   height: 205px;
   object-fit: cover;
   border-radius: 14px;
 }
-}
-.Conv.Ing.png {
+
+/* WORKSHOP IMAGES */
+
+.imagen-chess,
+.imagen-ingles {
   width: 20px;
   height: 20px;
   object-fit: cover;
   border-radius: 12px;
   margin: 20px 0;
-}
-}
-.imagen-chess img {
-  width: 20px;
-  height: 20px;
   display: block;
-  border-radius: 4px;
 }
