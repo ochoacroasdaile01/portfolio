@@ -216,10 +216,10 @@ footer {
 
 }
 .photo-gallery img {
-  width: 20px;
-  height: 10px;
+  width: 25px;
+  height: 25px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 14px;
 }
 }
 .Conv.Ing.png {
