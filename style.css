@@ -216,8 +216,8 @@ footer {
 
 }
 .photo-gallery img {
-  width: 25px;
-  height: 25px;
+  width: 205px;
+  height: 205px;
   object-fit: cover;
   border-radius: 14px;
 }
@@ -230,10 +230,9 @@ footer {
   margin: 20px 0;
 }
 }
-.imagen-chess.jpg {
+.imagen-chess img {
   width: 20px;
   height: 20px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 20px 0;
+  display: block;
+  border-radius: 4px;
 }
