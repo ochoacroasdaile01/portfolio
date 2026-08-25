@@ -229,4 +229,11 @@ footer {
   border-radius: 12px;
   margin: 20px 0;
 }
-
+}
+.AjedrezPonedera.jpg {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+}
