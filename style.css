@@ -276,3 +276,14 @@ footer {
   }
 
 }
+.survey-link {
+  color: #2c5f2d;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.survey-link:hover {
+  text-decoration: underline;
+}
