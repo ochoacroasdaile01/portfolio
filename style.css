@@ -130,7 +130,7 @@ p {
 
 .profile-picture {
   width: 100%;
-  max-width: 520px;
+  max-width: 320px;
 
   height: auto;
 
@@ -214,4 +214,11 @@ footer {
     font-size: 30px;
   }
 
+}
+.chess {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
 }
