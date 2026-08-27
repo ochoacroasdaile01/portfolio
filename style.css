@@ -259,6 +259,11 @@ footer {
   display: block;
   border-radius: 4px;
 }
+.imagen-miami {
+  width: 250px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 .profile-text {
   flex: 1;
 }
