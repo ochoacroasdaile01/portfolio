@@ -297,5 +297,10 @@ footer {
 }
 
 .survey-link:hover {
+  olor: #264bbd;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
   text-decoration: underline;
 }
