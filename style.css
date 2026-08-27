@@ -260,10 +260,10 @@ footer {
   border-radius: 4px;
 }
 .imagen-miami {
-  width: 250px;
+  width: 300px;
   height: auto;
   display: block;
-  border-radius: 4px;
+  border-radius: 6px;
 .profile-text {
   flex: 1;
 }
