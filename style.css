@@ -253,7 +253,12 @@ footer {
   flex-shrink: 0;
   border-radius: 4px;
 }
-
+.imagen-peace {
+  width: 250px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
 .profile-text {
   flex: 1;
 }
