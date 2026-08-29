@@ -231,10 +231,10 @@ footer {
 .imagen-finanzas,
 .imagen-poster,
 .imagen-ingles {
-  width: 300px;
-  height: 310px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 4px;
   margin: 20px 0;
   display: block;
 }
