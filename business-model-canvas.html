@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Model Canvas - Martin Ochoa</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .canvas-intro {
+      margin-bottom: 35px;
+    }
+
+    .canvas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .canvas-card {
+      background: #fffdf7;
+      border: 1px solid #ded9c8;
+      border-radius: 8px;
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .canvas-number {
+      color: #8B7355;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .canvas-card h2 {
+      font-size: 19px;
+      margin: 10px 0 15px;
+    }
+
+    .canvas-card p {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .canvas-example {
+      background: #F5F5DC;
+      border-left: 3px solid #62785D;
+      padding: 12px;
+      border-radius: 3px;
+    }
+
+    .canvas-example strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .canvas-example p {
+      margin: 0;
+    }
+
+    .canvas-card:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .canvas-back {
+      display: inline-block;
+      margin-top: 40px;
+      color: #1E3A5F;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .canvas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .canvas-card:last-child {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <a class="name" href="index.html">Martin Ochoa</a>
+
+      <nav>
+        <a href="tools.html"
+           data-en="Tools for Entrepreneurs"
+           data-es="Herramientas para Emprendedores">
+          Tools for Entrepreneurs
+        </a>
+
+        <button id="language-toggle" type="button">
+          Español
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <h1 data-en="Business Model Canvas"
+          data-es="Modelo de Negocio Canvas">
+        Business Model Canvas
+      </h1>
+
+      <p class="canvas-intro"
+         data-en="The Business Model Canvas helps you organize your business idea on one page. It explains what you sell, who your customers are, how your business operates, and how it earns money. Explore its nine sections using a homemade yogurt business as an example."
+         data-es="El Modelo de Negocio Canvas te ayuda a organizar tu idea de negocio en una sola página. Explica qué vendes, quiénes son tus clientes, cómo funciona tu negocio y cómo genera ingresos. Conoce sus nueve secciones usando como ejemplo un negocio de yogur casero.">
+        The Business Model Canvas helps you organize your
+        business idea on one page. It explains what you sell,
+        who your customers are, how your business operates,
+        and how it earns money. Explore its nine sections
+        using a homemade yogurt business as an example.
+      </p>
+
+      <div class="canvas-grid">
+
+        <!-- 1. CUSTOMER SEGMENTS -->
+        <section class="canvas-card">
+          <span class="canvas-number">01</span>
+
+          <h2 data-en="Customer Segments"
+              data-es="Segmentos de Clientes">
+            Customer Segments
+          </h2>
+
+          <p data-en="The groups of people you want to sell to. Who needs your product and can afford it?"
+             data-es="Los grupos de personas a quienes quieres venderles. ¿Quién necesita tu producto y puede pagarlo?">
+            The groups of people you want to sell to.
+            Who needs your product and can afford it?
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Students looking for a snack and families in your neighborhood."
+               data-es="Estudiantes que buscan una merienda y familias de tu barrio.">
+              Students looking for a snack and families
+              in your neighborhood.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. VALUE PROPOSITION -->
+        <section class="canvas-card">
+          <span class="canvas-number">02</span>
+
+          <h2 data-en="Value Proposition"
+              data-es="Propuesta de Valor">
+            Value Proposition
+          </h2>
+
+          <p data-en="The reason customers would choose your product. What need does it meet or benefit does it offer?"
+             data-es="La razón por la que los clientes elegirían tu producto. ¿Qué necesidad satisface o qué beneficio ofrece?">
+            The reason customers would choose your product.
+            What need does it meet or benefit does it offer?
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Fresh yogurt made with fruit and local milk at an affordable price."
+               data-es="Yogur fresco elaborado con frutas y leche local a un precio económico.">
+              Fresh yogurt made with fruit and local milk
+              at an affordable price.
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. CHANNELS -->
+        <section class="canvas-card">
+          <span class="canvas-number">03</span>
+
+          <h2 data-en="Channels"
+              data-es="Canales">
+            Channels
+          </h2>
+
+          <p data-en="How customers discover, buy, and receive your product."
+             data-es="Cómo los clientes conocen, compran y reciben tu producto.">
+            How customers discover, buy, and receive
+            your product.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="WhatsApp posts, local fairs, and deliveries."
+               data-es="Publicaciones en WhatsApp, ferias locales y entregas a domicilio.">
+              WhatsApp posts, local fairs, and deliveries.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4. CUSTOMER RELATIONSHIPS -->
+        <section class="canvas-card">
+          <span class="canvas-number">04</span>
+
+          <h2 data-en="Customer Relationships"
+              data-es="Relaciones con Clientes">
+            Customer Relationships
+          </h2>
+
+          <p data-en="How you treat customers and encourage them to return."
+             data-es="Cómo tratas a tus clientes y los motivas a volver a comprar.">
+            How you treat customers and encourage them
+            to return.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Friendly service, reliable orders, and asking for feedback on flavors."
+               data-es="Atención amable, pedidos confiables y pedir opiniones sobre los sabores.">
+              Friendly service, reliable orders, and asking
+              for feedback on flavors.
+            </p>
+          </div>
+        </section>
+
+        <!-- 5. REVENUE STREAMS -->
+        <section class="canvas-card">
+          <span class="canvas-number">05</span>
+
+          <h2 data-en="Revenue Streams"
+              data-es="Fuentes de Ingresos">
+            Revenue Streams
+          </h2>
+
+          <p data-en="The ways your business brings in money. Revenue is not profit: you still need to subtract costs."
+             data-es="Las formas en que tu negocio recibe dinero. Los ingresos no son ganancias: todavía debes restar los costos.">
+            The ways your business brings in money.
+            Revenue is not profit: you still need to
+            subtract costs.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Selling individual yogurt cups and family-sized containers."
+               data-es="Venta de vasos individuales de yogur y envases de tamaño familiar.">
+              Selling individual yogurt cups and
+              family-sized containers.
+            </p>
+          </div>
+        </section>
+
+        <!-- 6. KEY RESOURCES -->
+        <section class="canvas-card">
+          <span class="canvas-number">06</span>
+
+          <h2 data-en="Key Resources"
+              data-es="Recursos Clave">
+            Key Resources
+          </h2>
+
+          <p data-en="The equipment, materials, money, and knowledge your business needs."
+             data-es="Los equipos, materiales, dinero y conocimientos que necesita tu negocio.">
+            The equipment, materials, money, and knowledge
+            your business needs.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="A refrigerator, ingredients, containers, and knowledge of safe food preparation."
+               data-es="Una nevera, ingredientes, envases y conocimientos sobre la preparación segura de alimentos.">
+              A refrigerator, ingredients, containers,
+              and knowledge of safe food preparation.
+            </p>
+          </div>
+        </section>
+
+        <!-- 7. KEY ACTIVITIES -->
+        <section class="canvas-card">
+          <span class="canvas-number">07</span>
+
+          <h2 data-en="Key Activities"
+              data-es="Actividades Clave">
+            Key Activities
+          </h2>
+
+          <p data-en="The most important tasks you must perform to run your business."
+             data-es="Las tareas más importantes que debes realizar para que tu negocio funcione.">
+            The most important tasks you must perform
+            to run your business.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Buying ingredients, making and refrigerating yogurt, promoting it, and delivering orders."
+               data-es="Comprar ingredientes, preparar y refrigerar el yogur, promocionarlo y entregar pedidos.">
+              Buying ingredients, making and refrigerating
+              yogurt, promoting it, and delivering orders.
+            </p>
+          </div>
+        </section>
+
+        <!-- 8. KEY PARTNERS -->
+        <section class="canvas-card">
+          <span class="canvas-number">08</span>
+
+          <h2 data-en="Key Partners"
+              data-es="Socios Clave">
+            Key Partners
+          </h2>
+
+          <p data-en="The people or businesses you work with to keep your business running."
+             data-es="Las personas o empresas con las que trabajas para mantener tu negocio funcionando.">
+            The people or businesses you work with to
+            keep your business running.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Local milk suppliers, packaging suppliers, and stores that sell your yogurt."
+               data-es="Proveedores locales de leche, proveedores de envases y tiendas que venden tu yogur.">
+              Local milk suppliers, packaging suppliers,
+              and stores that sell your yogurt.
+            </p>
+          </div>
+        </section>
+
+        <!-- 9. COST STRUCTURE -->
+        <section class="canvas-card">
+          <span class="canvas-number">09</span>
+
+          <h2 data-en="Cost Structure"
+              data-es="Estructura de Costos">
+            Cost Structure
+          </h2>
+
+          <p data-en="Everything you spend to operate your business."
+             data-es="Todos los gastos necesarios para operar tu negocio.">
+            Everything you spend to operate your business.
+          </p>
+
+          <div class="canvas-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Milk, fruit, containers, electricity, transportation, and payment for labor."
+               data-es="Leche, frutas, envases, electricidad, transporte y pago por mano de obra.">
+              Milk, fruit, containers, electricity,
+              transportation, and payment for labor.
+            </p>
+          </div>
+        </section>
+
+      </div>
+
+      <a class="canvas-back"
+         href="tools.html"
+         data-en="Back to Entrepreneur Tools"
+         data-es="Volver a Herramientas para Emprendedores">
+        Back to Entrepreneur Tools
+      </a>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
