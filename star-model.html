@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Star Model - Martin Ochoa</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .star-intro {
+      margin-bottom: 35px;
+    }
+
+    .star-image {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 30px auto;
+      border-radius: 6px;
+    }
+
+    .star-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .star-card {
+      background: #fffdf7;
+      border: 1px solid #ded9c8;
+      border-radius: 8px;
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .star-number {
+      color: #8B7355;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .star-card h2 {
+      font-size: 19px;
+      margin: 10px 0 15px;
+    }
+
+    .star-card p {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .star-example {
+      background: #F5F5DC;
+      border-left: 3px solid #62785D;
+      padding: 12px;
+      border-radius: 3px;
+    }
+
+    .star-example strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .star-example p {
+      margin: 0;
+    }
+
+    .star-guide {
+      margin-top: 55px;
+    }
+
+    .star-guide h2 {
+      margin-bottom: 20px;
+    }
+
+    .star-guide li {
+      margin-bottom: 12px;
+    }
+
+    .star-back {
+      display: inline-block;
+      margin-top: 40px;
+      color: #1E3A5F;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .star-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <a class="name" href="index.html">
+        Martin Ochoa
+      </a>
+
+      <nav>
+        <a href="tools.html"
+           data-en="Tools for Entrepreneurs"
+           data-es="Herramientas para Emprendedores">
+          Tools for Entrepreneurs
+        </a>
+
+        <button id="language-toggle" type="button">
+          Español
+        </button>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1 data-en="The Star Model"
+          data-es="El Modelo de la Estrella">
+        The Star Model
+      </h1>
+
+      <p class="star-intro"
+         data-en="The Star Model is a simple tool that helps entrepreneurs discover and evaluate business ideas. It encourages you to consider five important factors: your passions, your capabilities, the opportunities available, your environment, and your competition. The goal is to find a business idea that you enjoy, are capable of developing, meets a real need, and has the potential to succeed."
+         data-es="El Modelo de la Estrella es una herramienta sencilla que ayuda a los emprendedores a descubrir y evaluar ideas de negocio. Te invita a considerar cinco factores importantes: tus pasiones, tus capacidades, las oportunidades disponibles, tu entorno y tu competencia. El objetivo es encontrar una idea de negocio que disfrutes, que puedas desarrollar, que responda a una necesidad real y que tenga potencial para tener éxito.">
+        The Star Model is a simple tool that helps entrepreneurs
+        discover and evaluate business ideas. It encourages you
+        to consider five important factors: your passions,
+        your capabilities, the opportunities available,
+        your environment, and your competition.
+      </p>
+
+      <!-- STAR MODEL IMAGE -->
+
+      <img
+        src="images/Star.png"
+        alt="Star Model with five categories"
+        class="star-image"
+      >
+
+      <h2 data-en="The Five Points of the Star"
+          data-es="Los Cinco Puntos de la Estrella">
+        The Five Points of the Star
+      </h2>
+
+      <div class="star-grid">
+
+        <!-- 1. PASSION -->
+
+        <section class="star-card">
+          <span class="star-number">01</span>
+
+          <h2 data-en="Passion"
+              data-es="Pasión">
+            Passion
+          </h2>
+
+          <p data-en="What do you enjoy doing? Think about your interests, hobbies, and activities that motivate you. Starting a business around something you enjoy can help you stay committed."
+             data-es="¿Qué disfrutas hacer? Piensa en tus intereses, pasatiempos y actividades que te motivan. Emprender en algo que disfrutas puede ayudarte a mantener tu compromiso.">
+            What do you enjoy doing? Think about your
+            interests, hobbies, and activities that motivate you.
+          </p>
+
+          <div class="star-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="You enjoy cooking, experimenting with flavors, and preparing homemade yogurt."
+               data-es="Disfrutas cocinar, experimentar con sabores y preparar yogur casero.">
+              You enjoy cooking, experimenting with flavors,
+              and preparing homemade yogurt.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. CAPABILITIES -->
+
+        <section class="star-card">
+          <span class="star-number">02</span>
+
+          <h2 data-en="Capabilities"
+              data-es="Capacidades">
+            Capabilities
+          </h2>
+
+          <p data-en="What are you good at? Identify your skills, knowledge, experience, and resources. Consider what you already know and what you need to learn."
+             data-es="¿En qué eres bueno? Identifica tus habilidades, conocimientos, experiencia y recursos. Considera lo que ya sabes y lo que necesitas aprender.">
+            What are you good at? Identify your skills,
+            knowledge, experience, and resources.
+          </p>
+
+          <div class="star-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="You know how to make yogurt, handle ingredients safely, and communicate with customers."
+               data-es="Sabes preparar yogur, manipular ingredientes de forma segura y comunicarte con los clientes.">
+              You know how to make yogurt, handle ingredients
+              safely, and communicate with customers.
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. POSSIBILITIES -->
+
+        <section class="star-card">
+          <span class="star-number">03</span>
+
+          <h2 data-en="Possibilities"
+              data-es="Posibilidades">
+            Possibilities
+          </h2>
+
+          <p data-en="What opportunities exist? Look for problems you could solve or needs that are not being fully met. Think about products or services people might be willing to pay for."
+             data-es="¿Qué oportunidades existen? Busca problemas que puedas resolver o necesidades que todavía no están satisfechas. Piensa en productos o servicios por los que las personas estarían dispuestas a pagar.">
+            What opportunities exist? Look for problems
+            you could solve or needs that are not being
+            fully met.
+          </p>
+
+          <div class="star-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Students and families in your neighborhood are looking for affordable, fresh snacks."
+               data-es="Los estudiantes y las familias de tu barrio buscan meriendas frescas y económicas.">
+              Students and families in your neighborhood
+              are looking for affordable, fresh snacks.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4. ENVIRONMENT -->
+
+        <section class="star-card">
+          <span class="star-number">04</span>
+
+          <h2 data-en="Environment"
+              data-es="Entorno">
+            Environment
+          </h2>
+
+          <p data-en="What is happening around you? Consider your community, local economy, customer habits, available resources, and other conditions that could help or challenge your business."
+             data-es="¿Qué está pasando a tu alrededor? Considera tu comunidad, la economía local, los hábitos de los clientes, los recursos disponibles y otras condiciones que pueden ayudar o dificultar tu negocio.">
+            What is happening around you? Consider your
+            community, local economy, customer habits,
+            and available resources.
+          </p>
+
+          <div class="star-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Local farmers sell milk and fruit, and neighborhood shops could help distribute your yogurt."
+               data-es="Los productores locales venden leche y frutas, y las tiendas del barrio podrían ayudarte a distribuir tu yogur.">
+              Local farmers sell milk and fruit, and
+              neighborhood shops could help distribute
+              your yogurt.
+            </p>
+          </div>
+        </section>
+
+        <!-- 5. COMPETITION -->
+
+        <section class="star-card">
+          <span class="star-number">05</span>
+
+          <h2 data-en="Competition"
+              data-es="Competencia">
+            Competition
+          </h2>
+
+          <p data-en="Who else offers something similar? Identify businesses selling similar products. Compare their prices, quality, customer service, and what makes them attractive to customers."
+             data-es="¿Quién ofrece algo similar? Identifica negocios que venden productos parecidos. Compara sus precios, calidad, atención al cliente y lo que los hace atractivos para los compradores.">
+            Who else offers something similar? Identify
+            businesses selling similar products and compare
+            their prices, quality, and customer service.
+          </p>
+
+          <div class="star-example">
+            <strong data-en="Example: Homemade Yogurt"
+                    data-es="Ejemplo: Yogur Casero">
+              Example: Homemade Yogurt
+            </strong>
+
+            <p data-en="Nearby stores sell commercial yogurt, but you could offer fresh, locally made yogurt with unique fruit flavors."
+               data-es="Las tiendas cercanas venden yogur comercial, pero tú podrías ofrecer yogur fresco, elaborado localmente y con sabores de frutas diferentes.">
+              Nearby stores sell commercial yogurt, but
+              you could offer fresh, locally made yogurt
+              with unique fruit flavors.
+            </p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- HOW TO USE THE MODEL -->
+
+      <section class="star-guide">
+
+        <h2 data-en="How to Use the Star Model"
+            data-es="Cómo Utilizar el Modelo de la Estrella">
+          How to Use the Star Model
+        </h2>
+
+        <p data-en="Start by writing your business idea in the center of the star. Then examine each of the five points and answer its guiding question."
+           data-es="Comienza escribiendo tu idea de negocio en el centro de la estrella. Luego analiza cada uno de los cinco puntos y responde su pregunta principal.">
+          Start by writing your business idea in the
+          center of the star. Then examine each of the
+          five points and answer its guiding question.
+        </p>
+
+        <ol>
+          <li data-en="Define your business idea."
+              data-es="Define tu idea de negocio.">
+            Define your business idea.
+          </li>
+
+          <li data-en="Answer the questions for each of the five categories."
+              data-es="Responde las preguntas de cada una de las cinco categorías.">
+            Answer the questions for each of the five categories.
+          </li>
+
+          <li data-en="Write down examples, observations, and available resources."
+              data-es="Escribe ejemplos, observaciones y recursos disponibles.">
+            Write down examples, observations, and available resources.
+          </li>
+
+          <li data-en="Identify your strengths, opportunities, and potential challenges."
+              data-es="Identifica tus fortalezas, oportunidades y posibles desafíos.">
+            Identify your strengths, opportunities, and potential challenges.
+          </li>
+
+          <li data-en="Decide what you need to research, learn, or improve before starting."
+              data-es="Decide qué necesitas investigar, aprender o mejorar antes de comenzar.">
+            Decide what you need to research, learn, or improve before starting.
+          </li>
+        </ol>
+
+        <h2 data-en="What Should You Learn?"
+            data-es="¿Qué Debes Aprender?">
+          What Should You Learn?
+        </h2>
+
+        <p data-en="A good business idea requires more than passion alone. You also need the skills to develop it, customers willing to buy it, favorable conditions, and a way to compete. The Star Model helps you recognize whether your idea connects your interests and abilities with a real opportunity in your community."
+           data-es="Una buena idea de negocio necesita más que pasión. También necesitas las habilidades para desarrollarla, clientes dispuestos a comprar, condiciones favorables y una forma de competir. El Modelo de la Estrella te ayuda a reconocer si tu idea conecta tus intereses y capacidades con una oportunidad real en tu comunidad.">
+          A good business idea requires more than passion alone.
+          You also need the skills to develop it, customers
+          willing to buy it, favorable conditions, and a way
+          to compete.
+        </p>
+
+      </section>
+
+      <a href="tools.html"
+         class="star-back"
+         data-en="Back to Entrepreneur Tools"
+         data-es="Volver a Herramientas para Emprendedores">
+        Back to Entrepreneur Tools
+      </a>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
